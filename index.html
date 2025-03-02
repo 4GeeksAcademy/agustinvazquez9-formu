@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Payment form example</h2>
+        <div id="error-message" class="error-message">Some fields are missing</div>
+        <form id="payment-form">
+            <label for="card-number">Card #</label>
+            <input type="text" id="card-number" placeholder="XXXXXXXXXXXXXXXX">
+            
+            <label for="cvc">CVC #</label>
+            <input type="text" id="cvc" placeholder="0000">
+
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" placeholder="$ Amount">
+            
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name">
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name">
+
+            <label for="city">City</label>
+            <input type="text" id="city">
+
+            <label for="state">State</label>
+            <select id="state">
+                <option value="">Pick a state</option>
+                <option value="CA">California</option>
+                <option value="NY">New York</option>
+                <option value="TX">Texas</option>
+            </select>
+
+            <label for="postal-code">Postal Code</label>
+            <input type="text" id="postal-code">
+
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Add any notes here."></textarea>
+
+            <div class="buttons">
+                <button type="button" class="cancel">Cancel</button>
+                <button type="submit" class="send">Send</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
